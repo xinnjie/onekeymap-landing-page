@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Logo from "./logo";
+import Logo from './logo';
 
 export default function Header() {
   return (
@@ -11,25 +11,22 @@ export default function Header() {
             <Logo />
           </div>
 
-          {/* Desktop sign in links */}
-          <ul className="flex flex-1 items-center justify-end gap-3">
-            <li>
-              <Link
-                href="/signin"
-                className="btn-sm bg-white text-gray-800 shadow-sm hover:bg-gray-50"
-              >
-                Login
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/signup"
-                className="btn-sm bg-gray-800 text-gray-200 shadow-sm hover:bg-gray-900"
-              >
-                Register
-              </Link>
-            </li>
-          </ul>
+          {/* Desktop navigation */}
+          <nav className="flex grow">
+            <ul className="flex grow flex-wrap items-center justify-end">
+              <li>
+                <Link href="#features" className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900">Features</Link>
+              </li>
+              <li>
+                <Link href="/pricing" className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900">Pricing</Link>
+              </li>
+              <li>
+                <Link href="#download-app-store" className="btn-sm ml-4 bg-blue-500 text-white shadow-sm hover:bg-blue-600">
+                  Download
+                </Link>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>

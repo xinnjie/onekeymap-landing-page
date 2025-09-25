@@ -1,21 +1,20 @@
 export const metadata = {
-  title: "Home - Simple",
-  description: "Page description",
+  title: "OneKeymap — Configure once. Use everywhere.",
+  description:
+    "Unify your editor shortcuts across VS Code, Zed, IntelliJ IDEA, and Helix with OneKeymap.",
 };
 
-import Hero from "@/components/hero-home";
-import BusinessCategories from "@/components/business-categories";
-import FeaturesPlanet from "@/components/features-planet";
-import LargeTestimonial from "@/components/large-testimonial";
-import Cta from "@/components/cta";
+import Hero from '@/components/hero-home';
+import SupportedEditors from '@/components/supported-editors';
+import Features from '@/components/features';
+import Cta from '@/components/cta';
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <BusinessCategories />
-      <FeaturesPlanet />
-      <LargeTestimonial />
+      <SupportedEditors />
+      <Features />
       <Cta />
     </>
   );
