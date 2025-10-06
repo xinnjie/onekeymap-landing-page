@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { APP_STORE_URL } from '@/constants';
 import Logo from './logo';
 
 export default function Header() {
@@ -21,7 +22,7 @@ export default function Header() {
                 <Link href="/pricing" className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900">Pricing</Link>
               </li>
               <li>
-                <Link href="#download-app-store" className="btn-sm ml-4 bg-blue-500 text-white shadow-sm hover:bg-blue-600">
+                <Link href={APP_STORE_URL} className="btn-sm ml-4 bg-blue-500 text-white shadow-sm hover:bg-blue-600">
                   Download
                 </Link>
               </li>

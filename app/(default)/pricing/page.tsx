@@ -1,3 +1,5 @@
+import { APP_STORE_URL } from '@/constants';
+
 export const metadata = {
   title: "OneKeymap Pricing",
   description: "Choose the OneKeymap plan that fits you best.",
@@ -88,10 +90,10 @@ export default function PricingPage() {
         { text: "Monthly updates and new features" },
       ],
       ctaLabel: "Start monthly plan",
-      ctaHref: "#download-app-store",
+      ctaHref: APP_STORE_URL,
     },
     {
-      name: "Yearly",
+      name: "Annually",
       description: "Best balance of value and flexibility, with priority access to new features.",
       price: "$3.99",
       priceSuffix: "per year",
@@ -99,8 +101,8 @@ export default function PricingPage() {
         { text: "Sync shortcuts across every supported editor" },
         { text: "1 year of updates and new features" },
       ],
-      ctaLabel: "Start yearly plan",
-      ctaHref: "#download-app-store",
+      ctaLabel: "Start annually plan",
+      ctaHref: APP_STORE_URL,
       recommanded: true,
     },
     {
@@ -113,7 +115,7 @@ export default function PricingPage() {
         { text: "Lifetime updates and new features" },
       ],
       ctaLabel: "Get lifetime license",
-      ctaHref: "#download-app-store",
+      ctaHref: APP_STORE_URL,
     },
   ];
 

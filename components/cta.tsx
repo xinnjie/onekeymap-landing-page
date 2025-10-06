@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { APP_STORE_URL } from '@/constants';
 import Stripes from '@/public/images/stripes-dark.svg';
 import OneKeymapLogo from '@/public/images/logo-onekeymap-liquid-60x60@3x.png';
 
@@ -37,7 +38,7 @@ export default function Cta() {
             <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
               <a
                 className="btn group mb-4 w-full bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                href="#download-app-store"
+                href={APP_STORE_URL}
               >
                 <Image className="mr-2" src={OneKeymapLogo} width={24} height={24} alt="OneKeymap logo" />
                 <span>Get OneKeymap on the App Store</span>
