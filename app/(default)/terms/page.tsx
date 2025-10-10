@@ -1,81 +1,95 @@
 export const metadata = {
-  title: "OneKeymap Terms of Service",
-  description: "Review the OneKeymap End-User License Agreement and key legal terms.",
+  title: "OneKeymap End-User License Agreement",
+  description: "Review the OneKeymap End-User License Agreement (EULA) and key legal terms.",
 };
 
 const sections = [
   {
-    title: "License Grant",
+    title: "Introduction",
     content: [
-      "We provide you with a personal, non-transferable, non-exclusive license to install and use OneKeymap on Apple-branded macOS devices that you own or control.",
-      "The licensed use covers both personal and commercial workflows focused on managing editor shortcut configurations.",
+        "This End-User License Agreement ('this Agreement') is a legal agreement between you ('User' or 'you') and OneKeymap ('the Software' or 'we') regarding your download, installation, use of the Software, and related services.",
+        "Please read and fully understand all the terms of this Agreement. Your installation and use of the software are deemed as your having read and agreed to be bound by this Agreement.",
+        "If you are accepting this Agreement on behalf of an organization, you represent and warrant that you have the legal authority to bind that organization.",
     ],
   },
   {
-    title: "Restrictions",
+    title: "1. License Grant",
     content: [
-      "Do not reverse engineer, decompile, disassemble, or attempt to derive the source code of the app.",
-      "Do not rent, lease, sublicense, redistribute, or transfer your rights to any third party.",
-      "Do not remove or modify any proprietary notices contained within the software.",
-      "Do not use the software for any illegal purpose or in violation of applicable laws and regulations.",
+      "Subject to your compliance with the terms of this Agreement, we grant you a personal, non-transferable, non-exclusive, revocable, royalty-free limited license to install and use the Software on any Apple-branded macOS device that you own or control.",
+      "This license is for personal and commercial use, for the purpose of managing your editor shortcut key configuration files through the Software.",
     ],
   },
   {
-    title: "Ownership",
+    title: "2. Restrictions on Use",
     content: [
-      "All intellectual property rights in OneKeymap, including images, text, code, and UI design, are owned by the OneKeymap team.",
-      "No rights are granted to you beyond the limited license described in this agreement.",
+      "You agree not to, and not to permit others to:",
+      "Reverse engineer, decompile, disassemble, or attempt to discover the source code of the Software.",
+      "Modify, adapt, translate, or create derivative works based on the Software.",
+      "Copy the Software (except for backup purposes).",
+      "Rent, lease, distribute, sublicense, or otherwise transfer your rights under the Software to any third party.",
+      "Remove or alter any copyright, trademark, or other proprietary notices contained in the Software.",
+      "Use the Software for any illegal activity or to violate any applicable laws or regulations.",
     ],
   },
   {
-    title: "User Data and Privacy",
+    title: "3. Ownership",
     content: [
-      "Your keymap configurations and related data stay on your local device. We do not upload or share personal configuration data with third parties.",
-      "We collect anonymous, aggregated telemetry (such as feature usage frequency and performance metrics) to improve the product.",
-      "All analytics data are strictly anonymized and cannot identify you. You can manage telemetry preferences from the app when available.",
-      "For more details, refer to our Privacy Policy.",
+      "The Software and all related intellectual property rights, including copyrights, patents, and trademarks, are owned by the owner of OneKeymap.",
+      "All rights not expressly granted to you in this Agreement are reserved by us.",
     ],
   },
   {
-    title: "Disclaimer of Warranties",
+    title: "4. User Data and Privacy",
     content: [
-      "OneKeymap is provided on an \"as is\" basis without warranties of any kind.",
-      "We do not guarantee that the app will meet your requirements, operate uninterrupted, or be error-free.",
-      "You are responsible for backing up your editor configuration files. We are not liable for any data loss or damages resulting from the use of the app.",
+      "<strong>Local Data Storage:</strong> The core design philosophy of OneKeymap is to protect your privacy. All your shortcut key configuration data, editor file paths, and other information are stored only on your local device. The Software does not collect, upload, or share your personal configuration file content or any personally identifiable information with any third party.",
+      "<strong>Anonymous Usage Analytics:</strong> To improve the functionality of the Software, we use OpenTelemetry technology to collect completely anonymous, aggregated usage data, such as feature usage frequency, application performance metrics, and anonymous error reports.",
+      "<strong>Privacy Commitment:</strong> All analytics data we collect is strictly anonymous and does not contain any of your personally identifiable information. This data cannot be traced back to any specific user.",
+      "<strong>Purpose of Collection:</strong> The sole purpose of analyzing this data is to understand which features are most popular and the stability of the application, thereby providing a basis for future development and improvements.",
+      "<strong>Privacy Policy:</strong> For a more detailed explanation of how we handle information, please refer to our Privacy Policy.",
     ],
   },
   {
-    title: "Limitation of Liability",
+    title: "5. Disclaimer of Warranties",
     content: [
-      "To the maximum extent permitted by law, we are not liable for indirect, incidental, special, consequential, or punitive damages arising from the use or inability to use the software.",
-      "Our total liability is limited to the amount you paid for the software, if any.",
+      'YOU EXPRESSLY UNDERSTAND AND AGREE THAT YOUR USE OF THE SOFTWARE IS AT YOUR SOLE RISK. THE SOFTWARE IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITHOUT WARRANTIES OF ANY KIND.',
+      "WE DO NOT WARRANT THAT: (A) THE SOFTWARE WILL MEET YOUR SPECIFIC REQUIREMENTS; (B) THE SOFTWARE WILL BE UNINTERRUPTED, TIMELY, SECURE, OR ERROR-FREE; (C) THE RESULTS THAT MAY BE OBTAINED FROM THE USE OF THE SOFTWARE WILL BE ACCURATE OR RELIABLE; (D) ANY ERRORS IN THE SOFTWARE WILL BE CORRECTED.",
+      "You are responsible for backing up your original configuration files. We are not liable for any configuration file corruption, data loss, or system damage resulting from the use of the Software.",
     ],
   },
   {
-    title: "Termination",
+    title: "6. Limitation of Liability",
     content: [
-      "This agreement remains in effect until terminated. Your rights terminate automatically if you fail to comply with the terms.",
-      "Upon termination you must stop using OneKeymap and delete any copies in your possession.",
+      "TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL ONEKEYMAP OR ITS OWNERS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES.",
+      "IN NO EVENT SHALL OUR TOTAL AGGREGATE LIABILITY TO YOU FOR ALL DAMAGES EXCEED THE AMOUNT PAID BY YOU, IF ANY, FOR THE SOFTWARE.",
     ],
   },
   {
-    title: "Governing Law",
+    title: "7. Termination",
     content: [
-      "This agreement is governed by the laws of the People\'s Republic of China.",
-      "Disputes should be resolved amicably where possible. Otherwise, either party may submit the dispute to the competent court in the developer\'s jurisdiction.",
+      "This Agreement is effective from the date you accept it and continues until terminated.",
+      "Your rights under this Agreement will terminate automatically without notice from us if you fail to comply with any of its terms.",
+      "Upon termination of the Agreement, you must immediately cease all use of the Software and destroy all copies.",
     ],
   },
   {
-    title: "Changes to this Agreement",
+    title: "8. Governing Law and Dispute Resolution",
     content: [
-      "We may update this agreement at any time. Revised terms will be posted in the app or on our website.",
-      "Your continued use of OneKeymap after changes take effect constitutes acceptance of the updated agreement.",
+      "This Agreement shall be governed by the laws of the People's Republic of China.",
+      "Any dispute arising from this Agreement shall first be resolved through friendly negotiation. If negotiation fails, either party has the right to submit the dispute to the people's court with jurisdiction in the developer's location.",
     ],
   },
   {
-    title: "Contact",
+    title: "9. General Provisions",
     content: [
-      "If you have questions about this agreement, contact us at support@onekeymap.com.",
+      "<strong>Changes to Agreement:</strong> We reserve the right to modify this Agreement at any time. Your continued use of the Software constitutes your acceptance of the revised agreement.",
+      "<strong>Severability:</strong> If any provision of this Agreement is held to be illegal or unenforceable, the remaining provisions will remain in full force and effect.",
+      "<strong>Entire Agreement:</strong> This Agreement constitutes the entire agreement between you and OneKeymap regarding the Software.",
+    ],
+  },
+  {
+    title: "10. Contact Us",
+    content: [
+      "If you have any questions about this Agreement, please contact us at support@onekeymap.com.",
     ],
   },
 ];
@@ -86,10 +100,10 @@ export default function TermsPage() {
       <header className="text-center">
         <p className="text-sm uppercase tracking-wide text-blue-500">Last updated: 23 September 2025</p>
         <h1 className="mt-4 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-          OneKeymap Terms of Service
+          OneKeymap End-User License Agreement
         </h1>
         <p className="mt-4 text-lg text-gray-600">
-          These terms explain your rights and responsibilities when using OneKeymap.
+          Welcome to OneKeymap! This agreement outlines your rights and responsibilities when using our software.
         </p>
       </header>
 
@@ -101,7 +115,7 @@ export default function TermsPage() {
               {section.content.map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <span className="mt-1 h-2.5 w-2.5 flex-none rounded-full bg-blue-500" />
-                  <span>{item}</span>
+                  <span dangerouslySetInnerHTML={{ __html: item }} />
                 </li>
               ))}
             </ul>
