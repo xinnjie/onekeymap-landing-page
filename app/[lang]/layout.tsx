@@ -1,4 +1,5 @@
 import "../css/style.css";
+import { Analytics } from "@vercel/analytics/next"
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -146,6 +147,7 @@ export default async function LangLayout({
           {children}
         </div>
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
