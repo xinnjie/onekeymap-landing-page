@@ -1,9 +1,9 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-import LogoVscode from '@/public/images/logo-vscode.svg';
-import LogoIntellij from '@/public/images/logo-intellij.svg';
-import LogoZed from '@/public/images/logo-zed.png';
-import LogoHelix from '@/public/images/logo-helix.svg';
+import LogoVscode from "@/public/images/logo-vscode.svg";
+import LogoIntellij from "@/public/images/logo-intellij.svg";
+import LogoZed from "@/public/images/logo-zed.png";
+import LogoHelix from "@/public/images/logo-helix.svg";
 
 export default function SupportedEditors() {
   return (
@@ -12,7 +12,9 @@ export default function SupportedEditors() {
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="mx-auto max-w-3xl pb-12 text-center">
-            <h2 className="text-3xl font-bold">Works With Your Favorite Editors</h2>
+            <h2 className="text-3xl font-bold">
+              Works With Your Favorite Editors
+            </h2>
             <p
               className="mb-8 text-lg text-gray-700"
               data-aos="zoom-y-out"

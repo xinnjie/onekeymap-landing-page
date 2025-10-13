@@ -1,15 +1,16 @@
 export const metadata = {
   title: "OneKeymap End-User License Agreement",
-  description: "Review the OneKeymap End-User License Agreement (EULA) and key legal terms.",
+  description:
+    "Review the OneKeymap End-User License Agreement (EULA) and key legal terms.",
 };
 
 const sections = [
   {
     title: "Introduction",
     content: [
-        "This End-User License Agreement ('this Agreement') is a legal agreement between you ('User' or 'you') and OneKeymap ('the Software' or 'we') regarding your download, installation, use of the Software, and related services.",
-        "Please read and fully understand all the terms of this Agreement. Your installation and use of the software are deemed as your having read and agreed to be bound by this Agreement.",
-        "If you are accepting this Agreement on behalf of an organization, you represent and warrant that you have the legal authority to bind that organization.",
+      "This End-User License Agreement ('this Agreement') is a legal agreement between you ('User' or 'you') and OneKeymap ('the Software' or 'we') regarding your download, installation, use of the Software, and related services.",
+      "Please read and fully understand all the terms of this Agreement. Your installation and use of the software are deemed as your having read and agreed to be bound by this Agreement.",
+      "If you are accepting this Agreement on behalf of an organization, you represent and warrant that you have the legal authority to bind that organization.",
     ],
   },
   {
@@ -96,21 +97,29 @@ const sections = [
 
 export default function TermsPage() {
   return (
-    <main className="mx-auto max-w-4xl px-4 pb-20 pt-32 sm:px-6 lg:px-8">
+    <main className="mx-auto max-w-4xl px-4 pt-32 pb-20 sm:px-6 lg:px-8">
       <header className="text-center">
-        <p className="text-sm uppercase tracking-wide text-blue-500">Last updated: 23 September 2025</p>
+        <p className="text-sm tracking-wide text-blue-500 uppercase">
+          Last updated: 23 September 2025
+        </p>
         <h1 className="mt-4 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
           OneKeymap End-User License Agreement
         </h1>
         <p className="mt-4 text-lg text-gray-600">
-          Welcome to OneKeymap! This agreement outlines your rights and responsibilities when using our software.
+          Welcome to OneKeymap! This agreement outlines your rights and
+          responsibilities when using our software.
         </p>
       </header>
 
       <section className="mt-16 space-y-12">
         {sections.map((section) => (
-          <article key={section.title} className="rounded-3xl bg-white p-8 shadow-xl ring-1 ring-gray-100">
-            <h2 className="text-2xl font-semibold text-gray-900">{section.title}</h2>
+          <article
+            key={section.title}
+            className="rounded-3xl bg-white p-8 ring-1 shadow-xl ring-gray-100"
+          >
+            <h2 className="text-2xl font-semibold text-gray-900">
+              {section.title}
+            </h2>
             <ul className="mt-6 space-y-3 text-base text-gray-600">
               {section.content.map((item) => (
                 <li key={item} className="flex items-start gap-3">

@@ -1,6 +1,7 @@
 export const metadata = {
   title: "OneKeymap Privacy Policy",
-  description: "How OneKeymap handles telemetry, local data, and your privacy choices.",
+  description:
+    "How OneKeymap handles telemetry, local data, and your privacy choices.",
 };
 
 const sections = [
@@ -50,35 +51,41 @@ const sections = [
   {
     title: "Changes to this policy",
     body: [
-      "We may update this policy to reflect product improvements or legal requirements. When we do, we will update the \"Last updated\" date at the top of the page and surface the change in-app.",
+      'We may update this policy to reflect product improvements or legal requirements. When we do, we will update the "Last updated" date at the top of the page and surface the change in-app.',
       "Continued use of OneKeymap after the policy change constitutes acceptance of the revised policy.",
     ],
   },
   {
     title: "Contact",
-    body: [
-      "Questions about this policy? Email us at support@onekeymap.com.",
-    ],
+    body: ["Questions about this policy? Email us at support@onekeymap.com."],
   },
 ];
 
 export default function PrivacyPage() {
   return (
-    <main className="mx-auto max-w-4xl px-4 pb-20 pt-32 sm:px-6 lg:px-8">
+    <main className="mx-auto max-w-4xl px-4 pt-32 pb-20 sm:px-6 lg:px-8">
       <header className="text-center">
-        <p className="text-sm uppercase tracking-wide text-blue-500">Last updated: 23 September 2025</p>
+        <p className="text-sm tracking-wide text-blue-500 uppercase">
+          Last updated: 23 September 2025
+        </p>
         <h1 className="mt-4 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
           OneKeymap Privacy Policy
         </h1>
         <p className="mt-4 text-lg text-gray-600">
-          Learn how OneKeymap protects your privacy while keeping your shortcuts synchronized across editors.
+          Learn how OneKeymap protects your privacy while keeping your shortcuts
+          synchronized across editors.
         </p>
       </header>
 
       <section className="mt-16 space-y-12">
         {sections.map((section) => (
-          <article key={section.title} className="rounded-3xl bg-white p-8 shadow-xl ring-1 ring-gray-100">
-            <h2 className="text-2xl font-semibold text-gray-900">{section.title}</h2>
+          <article
+            key={section.title}
+            className="rounded-3xl bg-white p-8 ring-1 shadow-xl ring-gray-100"
+          >
+            <h2 className="text-2xl font-semibold text-gray-900">
+              {section.title}
+            </h2>
             <ul className="mt-6 space-y-3 text-base text-gray-600">
               {section.body.map((paragraph) => (
                 <li key={paragraph} className="flex items-start gap-3">

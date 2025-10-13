@@ -1,4 +1,4 @@
-import { APP_STORE_URL } from '@/constants';
+import { APP_STORE_URL } from "@/constants";
 
 export const metadata = {
   title: "OneKeymap Pricing",
@@ -37,28 +37,34 @@ function PricingCard({
   const headingClassName = isRecommanded
     ? "text-2xl font-semibold"
     : "text-2xl font-semibold text-gray-900";
-  const descriptionClassName = isRecommanded ? "text-gray-200" : "text-gray-600";
+  const descriptionClassName = isRecommanded
+    ? "text-gray-200"
+    : "text-gray-600";
   const priceWrapperClassName = isRecommanded ? "text-white" : "text-gray-900";
-  const priceSuffixClassName = isRecommanded ? "text-gray-300" : "text-gray-600";
+  const priceSuffixClassName = isRecommanded
+    ? "text-gray-300"
+    : "text-gray-600";
   const featuresClassName = isRecommanded ? "text-gray-200" : "text-gray-600";
   const ctaClassName = isRecommanded
     ? "bg-white text-gray-900 hover:bg-gray-100"
     : "bg-blue-500 text-white hover:bg-blue-600";
   return (
-    <section className={`flex h-full flex-col rounded-3xl p-10 ${containerClassName}`}>
+    <section
+      className={`flex h-full flex-col rounded-3xl p-10 ${containerClassName}`}
+    >
       <div>
         <h2 className={headingClassName}>{name}</h2>
         <p className={`mt-3 ${descriptionClassName}`}>{description}</p>
       </div>
-      <div className={`mt-8 flex items-baseline gap-2 ${priceWrapperClassName}`}>
+      <div
+        className={`mt-8 flex items-baseline gap-2 ${priceWrapperClassName}`}
+      >
         <span className="text-5xl font-bold">{price}</span>
         <span className={`text-lg ${priceSuffixClassName}`}>{priceSuffix}</span>
       </div>
       <ul className={`mt-8 space-y-3 text-sm ${featuresClassName}`}>
         {features.map((feature) => {
-          const dotClassName = isRecommanded
-            ? "bg-blue-300"
-            : "bg-blue-400";
+          const dotClassName = isRecommanded ? "bg-blue-300" : "bg-blue-400";
 
           return (
             <li key={feature.text} className="flex items-center gap-2">
@@ -82,7 +88,8 @@ export default function PricingPage() {
   const plans: PricingCardProps[] = [
     {
       name: "Monthly",
-      description: "Flexible access to OneKeymap with a subscription you can cancel anytime.",
+      description:
+        "Flexible access to OneKeymap with a subscription you can cancel anytime.",
       price: "$0.99",
       priceSuffix: "per month",
       features: [
@@ -94,7 +101,8 @@ export default function PricingPage() {
     },
     {
       name: "Annually",
-      description: "Best balance of value and flexibility, with priority access to new features.",
+      description:
+        "Best balance of value and flexibility, with priority access to new features.",
       price: "$3.99",
       priceSuffix: "per year",
       features: [
@@ -107,7 +115,8 @@ export default function PricingPage() {
     },
     {
       name: "Lifetime",
-      description: "Own OneKeymap forever with a single payment and lock in future updates.",
+      description:
+        "Own OneKeymap forever with a single payment and lock in future updates.",
       price: "$12.99",
       priceSuffix: "one-time",
       features: [
@@ -120,7 +129,7 @@ export default function PricingPage() {
   ];
 
   return (
-    <main className="mx-auto max-w-6xl px-4 pb-20 pt-32 sm:px-6 lg:px-8">
+    <main className="mx-auto max-w-6xl px-4 pt-32 pb-20 sm:px-6 lg:px-8">
       <div className="text-center">
         <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
           Pick the OneKeymap plan that suits you

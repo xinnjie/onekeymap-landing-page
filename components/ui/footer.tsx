@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import Logo from './logo';
-import Image from 'next/image';
-import DiscordLogo from '@/public/images/logo-discord.svg';
+import Link from "next/link";
+import Logo from "./logo";
+import Image from "next/image";
+import DiscordLogo from "@/public/images/logo-discord.svg";
 
 export default function Footer({ border = false }: { border?: boolean }) {
   return (
@@ -16,9 +16,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
             <div>
               <Logo />
             </div>
-            <div className="text-sm text-gray-600">
-              Made by xinnjie
-            </div>
+            <div className="text-sm text-gray-600">Made by xinnjie</div>
           </div>
 
           {/* 2nd block */}
@@ -51,7 +49,6 @@ export default function Footer({ border = false }: { border?: boolean }) {
               </li>
             </ul>
           </div>
-
 
           {/* Resources block */}
           <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
@@ -95,7 +92,11 @@ export default function Footer({ border = false }: { border?: boolean }) {
                   aria-label="Discord"
                 >
                   <span className="flex h-8 w-8 items-center justify-center">
-                    <Image src={DiscordLogo} alt="Discord logo" className="h-5 w-5" />
+                    <Image
+                      src={DiscordLogo}
+                      alt="Discord logo"
+                      className="h-5 w-5"
+                    />
                   </span>
                 </Link>
               </li>
@@ -121,7 +122,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
 
       {/* Big text */}
       <div className="relative -mt-16 h-60 w-full" aria-hidden="true">
-        <div className="pointer-events-none absolute left-1/2 -z-10 -translate-x-1/2 text-center text-[clamp(8rem,20vw,14rem)] font-bold leading-none before:bg-linear-to-b before:from-gray-200 before:to-gray-100/30 before:to-80% before:bg-clip-text before:text-transparent before:content-['OneKeymap'] after:absolute after:inset-0 after:bg-gray-300/70 after:bg-clip-text after:text-transparent after:mix-blend-darken after:content-['OneKeymap'] after:[text-shadow:0_1px_0_white]"></div>
+        <div className="pointer-events-none absolute left-1/2 -z-10 -translate-x-1/2 text-center text-[clamp(8rem,20vw,14rem)] leading-none font-bold before:bg-linear-to-b before:from-gray-200 before:to-gray-100/30 before:to-80% before:bg-clip-text before:text-transparent before:content-['OneKeymap'] after:absolute after:inset-0 after:bg-gray-300/70 after:bg-clip-text after:text-transparent after:mix-blend-darken after:content-['OneKeymap'] after:[text-shadow:0_1px_0_white]"></div>
         {/* Glow */}
         <div
           className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-2/3"
