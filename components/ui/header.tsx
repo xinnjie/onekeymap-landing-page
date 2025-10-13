@@ -17,7 +17,7 @@ export default function Header() {
             <ul className="flex grow flex-wrap items-center justify-end">
               <li>
                 <Link
-                  href="#features"
+                  href="/#features"
                   className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900"
                 >
                   Features
