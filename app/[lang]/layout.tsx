@@ -1,5 +1,5 @@
 import "../css/style.css";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next";
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -23,7 +23,7 @@ export async function generateMetadata({
 }: {
   params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
-  const { lang } = await params as { lang: Locale };
+  const { lang } = (await params) as { lang: Locale };
   const config = seoConfig[lang];
 
   return {
@@ -130,7 +130,7 @@ export default async function LangLayout({
   children: React.ReactNode;
   params: Promise<{ lang: string }>;
 }) {
-  const { lang } = await params as { lang: Locale };
+  const { lang } = (await params) as { lang: Locale };
 
   return (
     <html lang={lang} className="scroll-smooth">
