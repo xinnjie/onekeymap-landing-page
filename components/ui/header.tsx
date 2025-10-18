@@ -48,6 +48,14 @@ export default function Header() {
               </li>
               <li>
                 <Link
+                  href="/docs"
+                  className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900"
+                >
+                  Docs
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/pricing"
                   className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900"
                 >
@@ -112,6 +120,15 @@ export default function Header() {
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Features
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/docs"
+                    className="block px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Docs
                   </Link>
                 </li>
                 <li>

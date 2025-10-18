@@ -25,11 +25,12 @@ function getLocale(request: NextRequest): string {
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Skip middleware for static files and API routes
+  // Skip middleware for static files, API routes, and docs (Nextra has its own i18n)
   if (
     pathname.startsWith("/_next") ||
     pathname.startsWith("/api") ||
     pathname.startsWith("/static") ||
+    pathname.startsWith("/docs") ||
     pathname.includes("/icon") ||
     pathname.includes("/apple-icon") ||
     pathname.includes("/og.png") ||
@@ -58,7 +59,7 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    // Skip all internal paths (_next, api, static files)
-    "/((?!_next|api|static|.*\\..*|og\\.png|manifest\\.json|robots\\.txt|sitemap\\.xml).*)",
+    // Skip all internal paths (_next, api, static files, docs)
+    "/((?!_next|api|static|docs|.*\\..*|og\\.png|manifest\\.json|robots\\.txt|sitemap\\.xml).*)",
   ],
 };
