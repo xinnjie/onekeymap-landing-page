@@ -50,7 +50,7 @@ export default async function RootLayout({
           banner={banner}
           navbar={navbar}
           pageMap={pageMap}
-          docsRepositoryBase="https://github.com/xinnjie/onekeymap-landing-page/tree/main/app/docs"
+          docsRepositoryBase="https://github.com/xinnjie/onekeymap-page/tree/main/app/docs"
           footer={footer}
         >
           {children}

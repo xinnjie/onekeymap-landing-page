@@ -44,7 +44,7 @@ export const seoConfig: Record<
   }
 > = {
   en: {
-    title: "OneKeymap — Configure once. Use everywhere.",
+    title: "OneKeymap — Keymap Configure once. Use everywhere.",
     description:
       "Unify your editor shortcuts across VS Code, Zed, IntelliJ IDEA, and Helix. Sync keybindings, boost productivity, and eliminate context switching between code editors.",
     keywords: [

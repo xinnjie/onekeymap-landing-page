@@ -1,5 +1,5 @@
 {
-  "name": "OneKeymap - Configure once. Use everywhere.",
+  "name": "OneKeymap - Keymap Configure once. Use everywhere.",
   "short_name": "OneKeymap",
   "description": "Unify your editor shortcuts across VS Code, Zed, IntelliJ IDEA, and Helix. Sync keybindings, boost productivity, and eliminate context switching between code editors.",
   "start_url": "/",

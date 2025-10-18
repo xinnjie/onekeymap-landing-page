@@ -71,7 +71,7 @@ export async function generateMetadata({
           url: "/og.png",
           width: 1200,
           height: 630,
-          alt: "OneKeymap - Configure once. Use everywhere.",
+          alt: "OneKeymap - Keymap Configure once. Use everywhere.",
         },
       ],
     },

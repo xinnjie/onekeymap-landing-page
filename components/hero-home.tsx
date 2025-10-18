@@ -18,7 +18,7 @@ export default function HeroHome() {
               data-aos="zoom-y-out"
               data-aos-delay={150}
             >
-              Configure Once, <br className="max-lg:hidden" />
+              Keymap Configure Once, <br className="max-lg:hidden" />
               Use Everywhere.
             </h1>
             <div className="mx-auto max-w-3xl">
@@ -49,13 +49,12 @@ export default function HeroHome() {
                     />
                     <span>Download for macOS</span>
                   </a>
-                  {/* TODO(xinnjie): Add GitHub link if open source */}
-                  {/* <a
+                  <a
                     className="btn w-full bg-white text-gray-800 shadow-sm hover:bg-gray-50 sm:ml-4 sm:w-auto"
-                    href="#github-repo"
+                    href="https://github.com/xinnjie/onekeymap-cli"
                   >
                     View on GitHub
-                  </a> */}
+                  </a>
                 </div>
               </div>
             </div>

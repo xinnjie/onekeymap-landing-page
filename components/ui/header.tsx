@@ -24,22 +24,6 @@ export default function Header() {
             <ul className="flex grow items-center justify-end">
               <li>
                 <Link
-                  href="https://discord.gg/fW3TWuXj9A"
-                  className="flex items-center justify-center text-gray-600 transition hover:text-gray-900"
-                  aria-label="Discord"
-                >
-                  <span className="flex h-8 w-8 items-center justify-center">
-                    <Image
-                      src={DiscordLogo}
-                      alt="Discord logo"
-                      className="h-5 w-5"
-                    />
-                  </span>
-                  <span className="ml-2 text-sm font-medium">Contact us</span>
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/#features"
                   className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900"
                 >
