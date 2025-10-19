@@ -1,4 +1,4 @@
-.PHONY: lint format
+.PHONY: lint format doc
 
 lint:
 	pnpm run lint
@@ -9,5 +9,7 @@ format:
 run:
 	pnpm run dev
 
-doc: ./doc/vscode-actions.json
-	./script/vscode-actions-to-md.sh $< ./content/vscode-actions.md
+./content/vscode-actions.md: ./doc/vscode-actions.json
+	./script/vscode-actions-to-md.sh $< $@
+
+doc: ./content/vscode-actions.md

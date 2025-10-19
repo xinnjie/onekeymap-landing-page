@@ -14085,18 +14085,6 @@ This document provides a comprehensive list of Visual Studio Code actions and th
 
 ---
 
-### Open Settings (UI)
-
-**ID:** `_workbench.openUserSettingsEditor`
-
----
-
-### Open Settings (JSON)
-
-**ID:** `settings.switchToJSON`
-
----
-
 ### Reset Location
 
 **ID:** `workbench.view.extension.references-view.resetViewContainerLocation`
@@ -14245,6 +14233,66 @@ This document provides a comprehensive list of Visual Studio Code actions and th
 
 ---
 
+### Problems
+
+**ID:** `workbench.panel.markers.view.toggleVisibility`
+
+**Precondition:** `false`
+
+---
+
+### Hide 'Problems'
+
+**ID:** `workbench.panel.markers.view.removeView`
+
+**Precondition:** `false`
+
+---
+
+### Output
+
+**ID:** `workbench.panel.output.toggleVisibility`
+
+**Precondition:** `false`
+
+---
+
+### Hide 'Output'
+
+**ID:** `workbench.panel.output.removeView`
+
+**Precondition:** `false`
+
+---
+
+### Terminal
+
+**ID:** `terminal.toggleVisibility`
+
+**Precondition:** `false`
+
+---
+
+### Hide 'Terminal'
+
+**ID:** `terminal.removeView`
+
+**Precondition:** `false`
+
+---
+
+### Open Settings (UI)
+
+**ID:** `_workbench.openUserSettingsEditor`
+
+---
+
+### Open Settings (JSON)
+
+**ID:** `settings.switchToJSON`
+
+---
+
 ### Variables
 
 **ID:** `workbench.debug.variablesView.toggleVisibility`
@@ -14306,54 +14354,6 @@ This document provides a comprehensive list of Visual Studio Code actions and th
 **ID:** `workbench.debug.breakPointsView.removeView`
 
 **Precondition:** `true`
-
----
-
-### Problems
-
-**ID:** `workbench.panel.markers.view.toggleVisibility`
-
-**Precondition:** `false`
-
----
-
-### Hide 'Problems'
-
-**ID:** `workbench.panel.markers.view.removeView`
-
-**Precondition:** `false`
-
----
-
-### Output
-
-**ID:** `workbench.panel.output.toggleVisibility`
-
-**Precondition:** `false`
-
----
-
-### Hide 'Output'
-
-**ID:** `workbench.panel.output.removeView`
-
-**Precondition:** `false`
-
----
-
-### Terminal
-
-**ID:** `terminal.toggleVisibility`
-
-**Precondition:** `false`
-
----
-
-### Hide 'Terminal'
-
-**ID:** `terminal.removeView`
-
-**Precondition:** `false`
 
 ---
 
@@ -14889,24 +14889,6 @@ This document provides a comprehensive list of Visual Studio Code actions and th
 
 ---
 
-### Shared
-
-**ID:** `workbench.action.output.show.shared`
-
----
-
-### Remote Tunnel Service
-
-**ID:** `workbench.action.output.show.remoteTunnelService`
-
----
-
-### Settings Sync
-
-**ID:** `workbench.action.output.show.userDataSync`
-
----
-
 ### Toggle Auto Scrolling
 
 **ID:** `workbench.output.action.toggleAutoScroll`
@@ -15025,12 +15007,6 @@ This document provides a comprehensive list of Visual Studio Code actions and th
 
 ---
 
-### Sign out of account
-
-**ID:** `_signOutOfAccount`
-
----
-
 ### Reset Location
 
 **ID:** `~remote.forwardedPorts.resetViewLocation`
@@ -15050,6 +15026,30 @@ This document provides a comprehensive list of Visual Studio Code actions and th
 **ID:** `~remote.forwardedPorts.removeView`
 
 **Precondition:** `false`
+
+---
+
+### Shared
+
+**ID:** `workbench.action.output.show.shared`
+
+---
+
+### Remote Tunnel Service
+
+**ID:** `workbench.action.output.show.remoteTunnelService`
+
+---
+
+### Settings Sync
+
+**ID:** `workbench.action.output.show.userDataSync`
+
+---
+
+### Sign out of account
+
+**ID:** `_signOutOfAccount`
 
 ---
 
@@ -15112,3 +15112,2177 @@ This document provides a comprehensive list of Visual Studio Code actions and th
 ### Clear Display Language Preference
 
 **ID:** `workbench.action.clearLocalePreference`
+
+---
+
+###
+
+**ID:** `editor.action.setSelectionAnchor`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+K Ctrl+B`
+- **Linux:** `Ctrl+K Ctrl+B`
+- **macOS:** `Cmd+K Cmd+B`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.goToSelectionAnchor`
+
+**Precondition:** `selectionAnchorSet`
+
+---
+
+###
+
+**ID:** `editor.action.selectFromAnchorToCursor`
+
+**Precondition:** `selectionAnchorSet`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+K Ctrl+K`
+- **Linux:** `Ctrl+K Ctrl+K`
+- **macOS:** `Cmd+K Cmd+K`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.cancelSelectionAnchor`
+
+**Precondition:** `selectionAnchorSet`
+
+**Default Keybinding:**
+
+- **Windows:** `Escape`
+- **Linux:** `Escape`
+- **macOS:** `Escape`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.selectToBracket`
+
+---
+
+###
+
+**ID:** `editor.action.jumpToBracket`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+Shift+\`
+- **Linux:** `Ctrl+Shift+\`
+- **macOS:** `Shift+Cmd+\`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.removeBrackets`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+Alt+Backspace`
+- **Linux:** `Ctrl+Alt+Backspace`
+- **macOS:** `Alt+Cmd+Backspace`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.moveCarretLeftAction`
+
+**Precondition:** `!editorReadonly`
+
+---
+
+###
+
+**ID:** `editor.action.moveCarretRightAction`
+
+**Precondition:** `!editorReadonly`
+
+---
+
+###
+
+**ID:** `editor.action.transposeLetters`
+
+**Precondition:** `!editorReadonly`
+
+**When:** `textInputFocus`
+
+---
+
+###
+
+**ID:** `editor.action.clipboardCopyWithSyntaxHighlightingAction`
+
+**When:** `textInputFocus`
+
+---
+
+###
+
+**ID:** `editor.action.quickFix`
+
+**Precondition:** `editorHasCodeActionsProvider && !editorReadonly`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+.`
+- **Linux:** `Ctrl+.`
+- **macOS:** `Cmd+.`
+
+**When:** `textInputFocus`
+
+---
+
+###
+
+**ID:** `editor.action.refactor`
+
+**Precondition:** `editorHasCodeActionsProvider && !editorReadonly`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+Shift+R`
+- **Linux:** `Ctrl+Shift+R`
+- **macOS:** `Ctrl+Shift+R`
+
+**When:** `textInputFocus`
+
+---
+
+###
+
+**ID:** `editor.action.sourceAction`
+
+**Precondition:** `editorHasCodeActionsProvider && !editorReadonly`
+
+---
+
+###
+
+**ID:** `editor.action.organizeImports`
+
+**Precondition:** `!editorReadonly && supportedCodeAction =~ /(\s|^)source\.organizeImports\b/`
+
+**Default Keybinding:**
+
+- **Windows:** `Shift+Alt+O`
+- **Linux:** `Shift+Alt+O`
+- **macOS:** `Shift+Alt+O`
+
+**When:** `textInputFocus`
+
+---
+
+###
+
+**ID:** `editor.action.autoFix`
+
+**Precondition:** `!editorReadonly && supportedCodeAction =~ /(\s|^)quickfix\b/`
+
+**Default Keybinding:**
+
+- **Windows:** `Shift+Alt+.`
+- **Linux:** `Shift+Alt+.`
+- **macOS:** `Alt+Cmd+.`
+
+**When:** `textInputFocus`
+
+---
+
+###
+
+**ID:** `editor.action.fixAll`
+
+**Precondition:** `!editorReadonly && supportedCodeAction =~ /(\s|^)source\.fixAll\b/`
+
+---
+
+###
+
+**ID:** `codelens.showLensesInCurrentLine`
+
+**Precondition:** `editorHasCodeLensProvider`
+
+---
+
+###
+
+**ID:** `editor.action.hideColorPicker`
+
+**Precondition:** `standaloneColorPickerVisible`
+
+**Default Keybinding:**
+
+- **Windows:** `Escape`
+- **Linux:** `Escape`
+- **macOS:** `Escape`
+
+---
+
+###
+
+**ID:** `editor.action.insertColorWithStandaloneColorPicker`
+
+**Precondition:** `standaloneColorPickerFocused`
+
+**Default Keybinding:**
+
+- **Windows:** `Enter`
+- **Linux:** `Enter`
+- **macOS:** `Enter`
+
+---
+
+###
+
+**ID:** `editor.action.commentLine`
+
+**Precondition:** `!editorReadonly`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+/`
+- **Linux:** `Ctrl+/`
+- **macOS:** `Cmd+/`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.addCommentLine`
+
+**Precondition:** `!editorReadonly`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+K Ctrl+C`
+- **Linux:** `Ctrl+K Ctrl+C`
+- **macOS:** `Cmd+K Cmd+C`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.removeCommentLine`
+
+**Precondition:** `!editorReadonly`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+K Ctrl+U`
+- **Linux:** `Ctrl+K Ctrl+U`
+- **macOS:** `Cmd+K Cmd+U`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.blockComment`
+
+**Precondition:** `!editorReadonly`
+
+**Default Keybinding:**
+
+- **Windows:** `Shift+Alt+A`
+- **Linux:** `Ctrl+Shift+A`
+- **macOS:** `Shift+Alt+A`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.showContextMenu`
+
+**Default Keybinding:**
+
+- **Windows:** `Shift+F10`
+- **Linux:** `Shift+F10`
+- **macOS:** `Shift+F10`
+
+**When:** `textInputFocus`
+
+---
+
+###
+
+**ID:** `cursorUndo`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+U`
+- **Linux:** `Ctrl+U`
+- **macOS:** `Cmd+U`
+
+**When:** `textInputFocus`
+
+---
+
+###
+
+**ID:** `cursorRedo`
+
+---
+
+###
+
+**ID:** `editor.action.pasteAs`
+
+**Precondition:** `!editorReadonly`
+
+---
+
+###
+
+**ID:** `editor.action.pasteAsText`
+
+**Precondition:** `!editorReadonly`
+
+---
+
+###
+
+**ID:** `actions.find`
+
+**Precondition:** `editorFocus || editorIsOpen`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+F`
+- **Linux:** `Ctrl+F`
+- **macOS:** `Cmd+F`
+
+---
+
+###
+
+**ID:** `editor.action.nextMatchFindAction`
+
+**Default Keybinding:**
+
+- **Windows:** `F3`
+- **Linux:** `F3`
+- **macOS:** `Cmd+G`
+
+**When:** `editorFocus`
+
+---
+
+###
+
+**ID:** `editor.action.previousMatchFindAction`
+
+**Default Keybinding:**
+
+- **Windows:** `Shift+F3`
+- **Linux:** `Shift+F3`
+- **macOS:** `Shift+Cmd+G`
+
+**When:** `editorFocus`
+
+---
+
+###
+
+**ID:** `editor.action.startFindReplaceAction`
+
+**Precondition:** `editorFocus || editorIsOpen`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+H`
+- **Linux:** `Ctrl+H`
+- **macOS:** `Alt+Cmd+F`
+
+---
+
+###
+
+**ID:** `editor.actions.findWithArgs`
+
+---
+
+###
+
+**ID:** `actions.findWithSelection`
+
+---
+
+###
+
+**ID:** `editor.action.goToMatchFindAction`
+
+**Precondition:** `findWidgetVisible`
+
+---
+
+###
+
+**ID:** `editor.action.nextSelectionMatchFindAction`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+F3`
+- **Linux:** `Ctrl+F3`
+- **macOS:** `Cmd+F3`
+
+**When:** `editorFocus`
+
+---
+
+###
+
+**ID:** `editor.action.previousSelectionMatchFindAction`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+Shift+F3`
+- **Linux:** `Ctrl+Shift+F3`
+- **macOS:** `Shift+Cmd+F3`
+
+**When:** `editorFocus`
+
+---
+
+###
+
+**ID:** `editor.unfold`
+
+**Precondition:** `foldingEnabled`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+Shift+]`
+- **Linux:** `Ctrl+Shift+]`
+- **macOS:** `Alt+Cmd+]`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.unfoldRecursively`
+
+**Precondition:** `foldingEnabled`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+K Ctrl+]`
+- **Linux:** `Ctrl+K Ctrl+]`
+- **macOS:** `Cmd+K Cmd+]`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.fold`
+
+**Precondition:** `foldingEnabled`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+Shift+[`
+- **Linux:** `Ctrl+Shift+[`
+- **macOS:** `Alt+Cmd+[`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.foldRecursively`
+
+**Precondition:** `foldingEnabled`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+K Ctrl+[`
+- **Linux:** `Ctrl+K Ctrl+[`
+- **macOS:** `Cmd+K Cmd+[`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.toggleFoldRecursively`
+
+**Precondition:** `foldingEnabled`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+K Ctrl+Shift+L`
+- **Linux:** `Ctrl+K Ctrl+Shift+L`
+- **macOS:** `Cmd+K Shift+Cmd+L`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.foldAll`
+
+**Precondition:** `foldingEnabled`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+K Ctrl+0`
+- **Linux:** `Ctrl+K Ctrl+0`
+- **macOS:** `Cmd+K Cmd+0`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.unfoldAll`
+
+**Precondition:** `foldingEnabled`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+K Ctrl+J`
+- **Linux:** `Ctrl+K Ctrl+J`
+- **macOS:** `Cmd+K Cmd+J`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.foldAllBlockComments`
+
+**Precondition:** `foldingEnabled`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+K Ctrl+/`
+- **Linux:** `Ctrl+K Ctrl+/`
+- **macOS:** `Cmd+K Cmd+/`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.foldAllMarkerRegions`
+
+**Precondition:** `foldingEnabled`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+K Ctrl+8`
+- **Linux:** `Ctrl+K Ctrl+8`
+- **macOS:** `Cmd+K Cmd+8`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.unfoldAllMarkerRegions`
+
+**Precondition:** `foldingEnabled`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+K Ctrl+9`
+- **Linux:** `Ctrl+K Ctrl+9`
+- **macOS:** `Cmd+K Cmd+9`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.foldAllExcept`
+
+**Precondition:** `foldingEnabled`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+K Ctrl+-`
+- **Linux:** `Ctrl+K Ctrl+-`
+- **macOS:** `Cmd+K Cmd+-`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.unfoldAllExcept`
+
+**Precondition:** `foldingEnabled`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+K Ctrl+=`
+- **Linux:** `Ctrl+K Ctrl+=`
+- **macOS:** `Cmd+K Cmd+=`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.toggleFold`
+
+**Precondition:** `foldingEnabled`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+K Ctrl+L`
+- **Linux:** `Ctrl+K Ctrl+L`
+- **macOS:** `Cmd+K Cmd+L`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.gotoParentFold`
+
+**Precondition:** `foldingEnabled`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.gotoPreviousFold`
+
+**Precondition:** `foldingEnabled`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.gotoNextFold`
+
+**Precondition:** `foldingEnabled`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.createFoldingRangeFromSelection`
+
+**Precondition:** `foldingEnabled`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+K Ctrl+,`
+- **Linux:** `Ctrl+K Ctrl+,`
+- **macOS:** `Cmd+K Cmd+,`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.removeManualFoldingRanges`
+
+**Precondition:** `foldingEnabled`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+K Ctrl+.`
+- **Linux:** `Ctrl+K Ctrl+.`
+- **macOS:** `Cmd+K Cmd+.`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.toggleImportFold`
+
+**Precondition:** `foldingEnabled`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.fontZoomIn`
+
+---
+
+###
+
+**ID:** `editor.action.fontZoomOut`
+
+---
+
+###
+
+**ID:** `editor.action.fontZoomReset`
+
+---
+
+###
+
+**ID:** `editor.action.formatDocument`
+
+**Precondition:** `editorHasDocumentFormattingProvider && !editorReadonly && !inCompositeEditor`
+
+**Default Keybinding:**
+
+- **Windows:** `Shift+Alt+F`
+- **Linux:** `Ctrl+Shift+I`
+- **macOS:** `Shift+Alt+F`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.formatSelection`
+
+**Precondition:** `editorHasDocumentSelectionFormattingProvider && !editorReadonly`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+K Ctrl+F`
+- **Linux:** `Ctrl+K Ctrl+F`
+- **macOS:** `Cmd+K Cmd+F`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.copyLinesUpAction`
+
+**Precondition:** `!editorReadonly`
+
+**Default Keybinding:**
+
+- **Windows:** `Shift+Alt+UpArrow`
+- **Linux:** `Ctrl+Shift+Alt+UpArrow`
+- **macOS:** `Shift+Alt+UpArrow`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.copyLinesDownAction`
+
+**Precondition:** `!editorReadonly`
+
+**Default Keybinding:**
+
+- **Windows:** `Shift+Alt+DownArrow`
+- **Linux:** `Ctrl+Shift+Alt+DownArrow`
+- **macOS:** `Shift+Alt+DownArrow`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.duplicateSelection`
+
+**Precondition:** `!editorReadonly`
+
+---
+
+###
+
+**ID:** `editor.action.moveLinesUpAction`
+
+**Precondition:** `!editorReadonly`
+
+**Default Keybinding:**
+
+- **Windows:** `Alt+UpArrow`
+- **Linux:** `Alt+UpArrow`
+- **macOS:** `Alt+UpArrow`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.moveLinesDownAction`
+
+**Precondition:** `!editorReadonly`
+
+**Default Keybinding:**
+
+- **Windows:** `Alt+DownArrow`
+- **Linux:** `Alt+DownArrow`
+- **macOS:** `Alt+DownArrow`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.sortLinesAscending`
+
+**Precondition:** `!editorReadonly`
+
+---
+
+###
+
+**ID:** `editor.action.sortLinesDescending`
+
+**Precondition:** `!editorReadonly`
+
+---
+
+###
+
+**ID:** `editor.action.removeDuplicateLines`
+
+**Precondition:** `!editorReadonly`
+
+---
+
+###
+
+**ID:** `editor.action.trimTrailingWhitespace`
+
+**Precondition:** `!editorReadonly`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+K Ctrl+X`
+- **Linux:** `Ctrl+K Ctrl+X`
+- **macOS:** `Cmd+K Cmd+X`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.deleteLines`
+
+**Precondition:** `!editorReadonly`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+Shift+K`
+- **Linux:** `Ctrl+Shift+K`
+- **macOS:** `Shift+Cmd+K`
+
+**When:** `textInputFocus`
+
+---
+
+###
+
+**ID:** `editor.action.indentLines`
+
+**Precondition:** `!editorReadonly`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+]`
+- **Linux:** `Ctrl+]`
+- **macOS:** `Cmd+]`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.outdentLines`
+
+**Precondition:** `!editorReadonly`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+[`
+- **Linux:** `Ctrl+[`
+- **macOS:** `Cmd+[`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.insertLineBefore`
+
+**Precondition:** `!editorReadonly`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+Shift+Enter`
+- **Linux:** `Ctrl+Shift+Enter`
+- **macOS:** `Shift+Cmd+Enter`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.insertLineAfter`
+
+**Precondition:** `!editorReadonly`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+Enter`
+- **Linux:** `Ctrl+Enter`
+- **macOS:** `Cmd+Enter`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `deleteAllLeft`
+
+**Precondition:** `!editorReadonly`
+
+**When:** `textInputFocus`
+
+---
+
+###
+
+**ID:** `deleteAllRight`
+
+**Precondition:** `!editorReadonly`
+
+**When:** `textInputFocus`
+
+---
+
+###
+
+**ID:** `editor.action.joinLines`
+
+**Precondition:** `!editorReadonly`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.transpose`
+
+**Precondition:** `!editorReadonly`
+
+---
+
+###
+
+**ID:** `editor.action.transformToUppercase`
+
+**Precondition:** `!editorReadonly`
+
+---
+
+###
+
+**ID:** `editor.action.transformToLowercase`
+
+**Precondition:** `!editorReadonly`
+
+---
+
+###
+
+**ID:** `editor.action.reverseLines`
+
+**Precondition:** `!editorReadonly`
+
+---
+
+###
+
+**ID:** `editor.action.transformToSnakecase`
+
+**Precondition:** `!editorReadonly`
+
+---
+
+###
+
+**ID:** `editor.action.transformToCamelcase`
+
+**Precondition:** `!editorReadonly`
+
+---
+
+###
+
+**ID:** `editor.action.transformToPascalcase`
+
+**Precondition:** `!editorReadonly`
+
+---
+
+###
+
+**ID:** `editor.action.transformToTitlecase`
+
+**Precondition:** `!editorReadonly`
+
+---
+
+###
+
+**ID:** `editor.action.transformToKebabcase`
+
+**Precondition:** `!editorReadonly`
+
+---
+
+###
+
+**ID:** `editor.action.triggerSuggest`
+
+**Precondition:** `editorHasCompletionItemProvider && !editorReadonly && !suggestWidgetVisible`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+Space`
+- **Linux:** `Ctrl+Space`
+- **macOS:** `Ctrl+Space`
+
+**Secondary Keybinding:**
+
+- **Windows:** `Ctrl+I`
+- **Linux:** `Ctrl+I`
+- **macOS:** `Alt+Escape, Cmd+I`
+
+**When:** `textInputFocus`
+
+---
+
+###
+
+**ID:** `editor.action.resetSuggestSize`
+
+---
+
+###
+
+**ID:** `editor.action.inlineSuggest.trigger`
+
+**Precondition:** `!editorReadonly`
+
+---
+
+###
+
+**ID:** `editor.action.inlineSuggest.triggerInlineEditExplicit`
+
+**Precondition:** `!editorReadonly`
+
+---
+
+###
+
+**ID:** `editor.action.inlineSuggest.showNext`
+
+**Precondition:** `inlineSuggestionVisible && !editorReadonly`
+
+**Default Keybinding:**
+
+- **Windows:** `Alt+]`
+- **Linux:** `Alt+]`
+- **macOS:** `Alt+]`
+
+---
+
+###
+
+**ID:** `editor.action.inlineSuggest.showPrevious`
+
+**Precondition:** `inlineSuggestionVisible && !editorReadonly`
+
+**Default Keybinding:**
+
+- **Windows:** `Alt+[`
+- **Linux:** `Alt+[`
+- **macOS:** `Alt+[`
+
+---
+
+###
+
+**ID:** `editor.action.inlineSuggest.acceptNextWord`
+
+**Precondition:** `inlineSuggestionVisible && !editorReadonly`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+RightArrow`
+- **Linux:** `Ctrl+RightArrow`
+- **macOS:** `Cmd+RightArrow`
+
+**When:** `cursorBeforeGhostText && inlineSuggestionVisible && !accessibilityModeEnabled && !editorReadonly`
+
+---
+
+###
+
+**ID:** `editor.action.inlineSuggest.acceptNextLine`
+
+**Precondition:** `inlineSuggestionVisible && !editorReadonly`
+
+---
+
+###
+
+**ID:** `editor.action.inlineSuggest.commit`
+
+**Precondition:** `inlineEditIsVisible || inlineSuggestionVisible`
+
+**Default Keybinding:**
+
+- **Windows:** `Tab`
+- **Linux:** `Tab`
+- **macOS:** `Tab`
+
+**When:** `inlineEditIsVisible && tabShouldAcceptInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible`
+
+---
+
+###
+
+**ID:** `editor.action.inlineSuggest.toggleShowCollapsed`
+
+**Precondition:** `true`
+
+---
+
+###
+
+**ID:** `editor.action.inlineSuggest.hide`
+
+**Precondition:** `inlineEditIsVisible || inlineSuggestionVisible`
+
+**Default Keybinding:**
+
+- **Windows:** `Escape`
+- **Linux:** `Escape`
+- **macOS:** `Escape`
+
+---
+
+###
+
+**ID:** `editor.action.inlineSuggest.jump`
+
+**Precondition:** `inlineEditIsVisible`
+
+**Default Keybinding:**
+
+- **Windows:** `Tab`
+- **Linux:** `Tab`
+- **macOS:** `Tab`
+
+**When:** `inlineEditIsVisible && tabShouldJumpToInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible`
+
+---
+
+###
+
+**ID:** `editor.action.inlineSuggest.dev.extractRepro`
+
+**Precondition:** `inlineEditIsVisible || inlineSuggestionVisible`
+
+---
+
+###
+
+**ID:** `editor.action.marker.next`
+
+**Default Keybinding:**
+
+- **Windows:** `Alt+F8`
+- **Linux:** `Alt+F8`
+- **macOS:** `Alt+F8`
+
+**When:** `editorFocus`
+
+---
+
+###
+
+**ID:** `editor.action.marker.prev`
+
+**Default Keybinding:**
+
+- **Windows:** `Shift+Alt+F8`
+- **Linux:** `Shift+Alt+F8`
+- **macOS:** `Shift+Alt+F8`
+
+**When:** `editorFocus`
+
+---
+
+###
+
+**ID:** `editor.action.marker.nextInFiles`
+
+**Default Keybinding:**
+
+- **Windows:** `F8`
+- **Linux:** `F8`
+- **macOS:** `F8`
+
+**When:** `editorFocus`
+
+---
+
+###
+
+**ID:** `editor.action.marker.prevInFiles`
+
+**Default Keybinding:**
+
+- **Windows:** `Shift+F8`
+- **Linux:** `Shift+F8`
+- **macOS:** `Shift+F8`
+
+**When:** `editorFocus`
+
+---
+
+###
+
+**ID:** `editor.action.debugEditorGpuRenderer`
+
+**Precondition:** `true`
+
+---
+
+###
+
+**ID:** `editor.action.showHover`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+K Ctrl+I`
+- **Linux:** `Ctrl+K Ctrl+I`
+- **macOS:** `Cmd+K Cmd+I`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.showDefinitionPreviewHover`
+
+---
+
+###
+
+**ID:** `editor.action.hideHover`
+
+---
+
+###
+
+**ID:** `editor.action.scrollUpHover`
+
+**Precondition:** `editorHoverFocused`
+
+**Default Keybinding:**
+
+- **Windows:** `UpArrow`
+- **Linux:** `UpArrow`
+- **macOS:** `UpArrow`
+
+**When:** `editorHoverFocused`
+
+---
+
+###
+
+**ID:** `editor.action.scrollDownHover`
+
+**Precondition:** `editorHoverFocused`
+
+**Default Keybinding:**
+
+- **Windows:** `DownArrow`
+- **Linux:** `DownArrow`
+- **macOS:** `DownArrow`
+
+**When:** `editorHoverFocused`
+
+---
+
+###
+
+**ID:** `editor.action.scrollLeftHover`
+
+**Precondition:** `editorHoverFocused`
+
+**Default Keybinding:**
+
+- **Windows:** `LeftArrow`
+- **Linux:** `LeftArrow`
+- **macOS:** `LeftArrow`
+
+**When:** `editorHoverFocused`
+
+---
+
+###
+
+**ID:** `editor.action.scrollRightHover`
+
+**Precondition:** `editorHoverFocused`
+
+**Default Keybinding:**
+
+- **Windows:** `RightArrow`
+- **Linux:** `RightArrow`
+- **macOS:** `RightArrow`
+
+**When:** `editorHoverFocused`
+
+---
+
+###
+
+**ID:** `editor.action.pageUpHover`
+
+**Precondition:** `editorHoverFocused`
+
+**Default Keybinding:**
+
+- **Windows:** `PageUp`
+- **Linux:** `PageUp`
+- **macOS:** `PageUp`
+
+**Secondary Keybinding:**
+
+- **Windows:** `Alt+UpArrow`
+- **Linux:** `Alt+UpArrow`
+- **macOS:** `Alt+UpArrow`
+
+**When:** `editorHoverFocused`
+
+---
+
+###
+
+**ID:** `editor.action.pageDownHover`
+
+**Precondition:** `editorHoverFocused`
+
+**Default Keybinding:**
+
+- **Windows:** `PageDown`
+- **Linux:** `PageDown`
+- **macOS:** `PageDown`
+
+**Secondary Keybinding:**
+
+- **Windows:** `Alt+DownArrow`
+- **Linux:** `Alt+DownArrow`
+- **macOS:** `Alt+DownArrow`
+
+**When:** `editorHoverFocused`
+
+---
+
+###
+
+**ID:** `editor.action.goToTopHover`
+
+**Precondition:** `editorHoverFocused`
+
+**Default Keybinding:**
+
+- **Windows:** `Home`
+- **Linux:** `Home`
+- **macOS:** `Home`
+
+**Secondary Keybinding:**
+
+- **Windows:** `Ctrl+UpArrow`
+- **Linux:** `Ctrl+UpArrow`
+- **macOS:** `Cmd+UpArrow`
+
+**When:** `editorHoverFocused`
+
+---
+
+###
+
+**ID:** `editor.action.goToBottomHover`
+
+**Precondition:** `editorHoverFocused`
+
+**Default Keybinding:**
+
+- **Windows:** `End`
+- **Linux:** `End`
+- **macOS:** `End`
+
+**Secondary Keybinding:**
+
+- **Windows:** `Ctrl+DownArrow`
+- **Linux:** `Ctrl+DownArrow`
+- **macOS:** `Cmd+DownArrow`
+
+**When:** `editorHoverFocused`
+
+---
+
+###
+
+**ID:** `editor.action.increaseHoverVerbosityLevel`
+
+**Precondition:** `editorHoverVisible`
+
+---
+
+###
+
+**ID:** `editor.action.decreaseHoverVerbosityLevel`
+
+**Precondition:** `editorHoverVisible`
+
+---
+
+###
+
+**ID:** `editor.action.indentationToSpaces`
+
+**Precondition:** `!editorReadonly`
+
+---
+
+###
+
+**ID:** `editor.action.indentationToTabs`
+
+**Precondition:** `!editorReadonly`
+
+---
+
+###
+
+**ID:** `editor.action.indentUsingTabs`
+
+---
+
+###
+
+**ID:** `editor.action.indentUsingSpaces`
+
+---
+
+###
+
+**ID:** `editor.action.changeTabDisplaySize`
+
+---
+
+###
+
+**ID:** `editor.action.detectIndentation`
+
+---
+
+###
+
+**ID:** `editor.action.reindentlines`
+
+**Precondition:** `!editorReadonly`
+
+---
+
+###
+
+**ID:** `editor.action.reindentselectedlines`
+
+**Precondition:** `!editorReadonly`
+
+---
+
+###
+
+**ID:** `editor.action.inPlaceReplace.up`
+
+**Precondition:** `!editorReadonly`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+Shift+,`
+- **Linux:** `Ctrl+Shift+,`
+- **macOS:** `Shift+Cmd+,`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.inPlaceReplace.down`
+
+**Precondition:** `!editorReadonly`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+Shift+.`
+- **Linux:** `Ctrl+Shift+.`
+- **macOS:** `Shift+Cmd+.`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.insertFinalNewLine`
+
+**Precondition:** `!editorReadonly`
+
+---
+
+###
+
+**ID:** `expandLineSelection`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+L`
+- **Linux:** `Ctrl+L`
+- **macOS:** `Cmd+L`
+
+**When:** `textInputFocus`
+
+---
+
+###
+
+**ID:** `editor.action.linkedEditing`
+
+**Precondition:** `editorHasRenameProvider && !editorReadonly`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+Shift+F2`
+- **Linux:** `Ctrl+Shift+F2`
+- **macOS:** `Shift+Cmd+F2`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.openLink`
+
+---
+
+###
+
+**ID:** `editor.action.insertCursorAbove`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+Alt+UpArrow`
+- **Linux:** `Shift+Alt+UpArrow`
+- **macOS:** `Alt+Cmd+UpArrow`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.insertCursorBelow`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+Alt+DownArrow`
+- **Linux:** `Shift+Alt+DownArrow`
+- **macOS:** `Alt+Cmd+DownArrow`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.insertCursorAtEndOfEachLineSelected`
+
+**Default Keybinding:**
+
+- **Windows:** `Shift+Alt+I`
+- **Linux:** `Shift+Alt+I`
+- **macOS:** `Shift+Alt+I`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.addSelectionToNextFindMatch`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+D`
+- **Linux:** `Ctrl+D`
+- **macOS:** `Cmd+D`
+
+**When:** `editorFocus`
+
+---
+
+###
+
+**ID:** `editor.action.addSelectionToPreviousFindMatch`
+
+---
+
+###
+
+**ID:** `editor.action.moveSelectionToNextFindMatch`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+K Ctrl+D`
+- **Linux:** `Ctrl+K Ctrl+D`
+- **macOS:** `Cmd+K Cmd+D`
+
+**When:** `editorFocus`
+
+---
+
+###
+
+**ID:** `editor.action.moveSelectionToPreviousFindMatch`
+
+---
+
+###
+
+**ID:** `editor.action.selectHighlights`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+Shift+L`
+- **Linux:** `Ctrl+Shift+L`
+- **macOS:** `Shift+Cmd+L`
+
+**When:** `editorFocus`
+
+---
+
+###
+
+**ID:** `editor.action.changeAll`
+
+**Precondition:** `editorTextFocus && !editorReadonly`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+F2`
+- **Linux:** `Ctrl+F2`
+- **macOS:** `Cmd+F2`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.addCursorsToBottom`
+
+---
+
+###
+
+**ID:** `editor.action.addCursorsToTop`
+
+---
+
+###
+
+**ID:** `editor.action.focusNextCursor`
+
+---
+
+###
+
+**ID:** `editor.action.focusPreviousCursor`
+
+---
+
+###
+
+**ID:** `editor.action.triggerParameterHints`
+
+**Precondition:** `editorHasSignatureHelpProvider`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+Shift+Space`
+- **Linux:** `Ctrl+Shift+Space`
+- **macOS:** `Shift+Cmd+Space`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.rename`
+
+**Precondition:** `editorHasRenameProvider && !editorReadonly`
+
+**Default Keybinding:**
+
+- **Windows:** `F2`
+- **Linux:** `F2`
+- **macOS:** `F2`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.smartSelect.expand`
+
+**Default Keybinding:**
+
+- **Windows:** `Shift+Alt+RightArrow`
+- **Linux:** `Shift+Alt+RightArrow`
+- **macOS:** `Ctrl+Shift+Cmd+RightArrow`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.smartSelect.shrink`
+
+**Default Keybinding:**
+
+- **Windows:** `Shift+Alt+LeftArrow`
+- **Linux:** `Shift+Alt+LeftArrow`
+- **macOS:** `Ctrl+Shift+Cmd+LeftArrow`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.forceRetokenize`
+
+---
+
+###
+
+**ID:** `editor.action.wordHighlight.next`
+
+**Precondition:** `hasWordHighlights`
+
+**Default Keybinding:**
+
+- **Windows:** `F7`
+- **Linux:** `F7`
+- **macOS:** `F7`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.wordHighlight.prev`
+
+**Precondition:** `hasWordHighlights`
+
+**Default Keybinding:**
+
+- **Windows:** `Shift+F7`
+- **Linux:** `Shift+F7`
+- **macOS:** `Shift+F7`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.wordHighlight.trigger`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `deleteInsideWord`
+
+**Precondition:** `!editorReadonly`
+
+---
+
+###
+
+**ID:** `editor.action.toggleWordWrap`
+
+**Default Keybinding:**
+
+- **Windows:** `Alt+Z`
+- **Linux:** `Alt+Z`
+- **macOS:** `Alt+Z`
+
+---
+
+###
+
+**ID:** `editor.action.inspectTMScopes`
+
+---
+
+###
+
+**ID:** `notebook.formatCell`
+
+**Precondition:** `editorHasDocumentFormattingProvider && inCompositeEditor && notebookEditable && !editorReadonly && activeEditor == 'workbench.editor.notebook'`
+
+**Default Keybinding:**
+
+- **Windows:** `Shift+Alt+F`
+- **Linux:** `Ctrl+Shift+I`
+- **macOS:** `Shift+Alt+F`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.formatDocument.multiple`
+
+**Precondition:** `editorHasMultipleDocumentFormattingProvider && !editorReadonly`
+
+---
+
+###
+
+**ID:** `editor.action.formatSelection.multiple`
+
+**Precondition:** `editorHasMultipleDocumentSelectionFormattingProvider && !editorReadonly`
+
+---
+
+###
+
+**ID:** `repl.action.acceptInput`
+
+**Precondition:** `inDebugRepl`
+
+**Default Keybinding:**
+
+- **Windows:** `Enter`
+- **Linux:** `Enter`
+- **macOS:** `Enter`
+
+**When:** `textInputFocus`
+
+---
+
+###
+
+**ID:** `repl.action.copyAll`
+
+**Precondition:** `inDebugRepl`
+
+---
+
+###
+
+**ID:** `editor.action.dirtydiff.previous`
+
+**Precondition:** `!textCompareEditorActive`
+
+**Default Keybinding:**
+
+- **Windows:** `Shift+Alt+F3`
+- **Linux:** `Shift+Alt+F3`
+- **macOS:** `Shift+Alt+F3`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.dirtydiff.next`
+
+**Precondition:** `!textCompareEditorActive`
+
+**Default Keybinding:**
+
+- **Windows:** `Alt+F3`
+- **Linux:** `Alt+F3`
+- **macOS:** `Alt+F3`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `workbench.action.editor.previousChange`
+
+**Precondition:** `!textCompareEditorActive && quickDiffDecorationCount != '0'`
+
+**Default Keybinding:**
+
+- **Windows:** `Shift+Alt+F5`
+- **Linux:** `Shift+Alt+F5`
+- **macOS:** `Shift+Alt+F5`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `workbench.action.editor.nextChange`
+
+**Precondition:** `!textCompareEditorActive && quickDiffDecorationCount != '0'`
+
+**Default Keybinding:**
+
+- **Windows:** `Alt+F5`
+- **Linux:** `Alt+F5`
+- **macOS:** `Alt+F5`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.debug.action.conditionalBreakpoint`
+
+**Precondition:** `debuggersAvailable`
+
+---
+
+###
+
+**ID:** `editor.debug.action.addLogPoint`
+
+**Precondition:** `debuggersAvailable`
+
+---
+
+###
+
+**ID:** `editor.debug.action.triggerByBreakpoint`
+
+**Precondition:** `debuggersAvailable`
+
+---
+
+###
+
+**ID:** `editor.debug.action.editBreakpoint`
+
+**Precondition:** `debuggersAvailable`
+
+---
+
+###
+
+**ID:** `editor.debug.action.runToCursor`
+
+**Precondition:** `debuggersAvailable && disassemblyViewFocus && !inChat && !panelFocus || debuggersAvailable && editorTextFocus && !inChat && !panelFocus`
+
+---
+
+###
+
+**ID:** `editor.debug.action.stepIntoTargets`
+
+**Precondition:** `editorTextFocus && inDebugMode && stepIntoTargetsSupported && debugState == 'stopped'`
+
+---
+
+###
+
+**ID:** `editor.debug.action.selectionToRepl`
+
+**Precondition:** `editorTextFocus && inDebugMode && !inChat`
+
+---
+
+###
+
+**ID:** `editor.debug.action.selectionToWatch`
+
+**Precondition:** `editorTextFocus && inDebugMode && !inChat`
+
+---
+
+###
+
+**ID:** `editor.debug.action.showDebugHover`
+
+**Precondition:** `inDebugMode`
+
+**Default Keybinding:**
+
+- **Windows:** `Ctrl+K Ctrl+I`
+- **Linux:** `Ctrl+K Ctrl+I`
+- **macOS:** `Cmd+K Cmd+I`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.debug.action.goToNextBreakpoint`
+
+**Precondition:** `debuggersAvailable`
+
+---
+
+###
+
+**ID:** `editor.debug.action.goToPreviousBreakpoint`
+
+**Precondition:** `debuggersAvailable`
+
+---
+
+###
+
+**ID:** `editor.debug.action.closeExceptionWidget`
+
+**Precondition:** `exceptionWidgetVisible`
+
+**Default Keybinding:**
+
+- **Windows:** `Escape`
+- **Linux:** `Escape`
+- **macOS:** `Escape`
+
+---
+
+###
+
+**ID:** `editor.emmet.action.expandAbbreviation`
+
+**Precondition:** `!editorReadonly`
+
+**Default Keybinding:**
+
+- **Windows:** `Tab`
+- **Linux:** `Tab`
+- **macOS:** `Tab`
+
+**When:** `config.emmet.triggerExpansionOnTab && editorTextFocus && !editorTabMovesFocus`
+
+---
+
+###
+
+**ID:** `editor.action.formatChanges`
+
+**Precondition:** `editorHasDocumentSelectionFormattingProvider && !editorReadonly`
+
+---
+
+###
+
+**ID:** `editor.action.formatDocument.none`
+
+**Precondition:** `!editorHasDocumentFormattingProvider && !editorReadonly`
+
+**Default Keybinding:**
+
+- **Windows:** `Shift+Alt+F`
+- **Linux:** `Ctrl+Shift+I`
+- **macOS:** `Shift+Alt+F`
+
+**When:** `editorTextFocus`
+
+---
+
+###
+
+**ID:** `editor.action.selectionClipboardPaste`
+
+**Precondition:** `!editorReadonly`
