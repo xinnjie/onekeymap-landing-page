@@ -75,17 +75,17 @@ fi
       (if .keybinding | type == "array" then .keybinding[0] else .keybinding end) as $kb |
       # Format the action title as a level-3 heading.
       "### " + .title + "\n\n" +
-      "**ID:** `" + .id + "`\n\n" +
-      (if .precondition then "**Precondition:** `" + .precondition + "`\n\n" else "" end) +
-      (if $kb.primary.win then "**Default Keybinding:**\n\n" +
-        "- **Windows:** `" + $kb.primary.win + "`\n" +
-        "- **Linux:** `" + $kb.primary.linux + "`\n" +
-        "- **macOS:** `" + $kb.primary.mac + "`\n\n" else "" end) +
-      (if $kb.secondary and $kb.secondary.win then "**Secondary Keybinding:**\n\n" +
-        "- **Windows:** `" + (if $kb.secondary.win then $kb.secondary.win | join(", ") else "" end) + "`\n" +
-        "- **Linux:** `" + (if $kb.secondary.linux then $kb.secondary.linux | join(", ") else "" end) + "`\n" +
-        "- **macOS:** `" + (if $kb.secondary.mac then $kb.secondary.mac | join(", ") else "" end) + "`\n\n" else "" end) +
-      (if $kb.when then "**When:** `" + $kb.when + "`\n\n" else "" end)
+      "ID: `" + .id + "`\n\n" +
+      (if .precondition then "Precondition: `" + .precondition + "`\n\n" else "" end) +
+      (if $kb.primary.win then "Default Keybinding:\n\n" +
+        "- Windows: `" + $kb.primary.win + "`\n" +
+        "- Linux: `" + $kb.primary.linux + "`\n" +
+        "- macOS: `" + $kb.primary.mac + "`\n\n" else "" end) +
+      (if $kb.secondary and $kb.secondary.win then "Secondary Keybinding:\n\n" +
+        "- Windows: `" + (if $kb.secondary.win then $kb.secondary.win | join(", ") else "" end) + "`\n" +
+        "- Linux: `" + (if $kb.secondary.linux then $kb.secondary.linux | join(", ") else "" end) + "`\n" +
+        "- macOS: `" + (if $kb.secondary.mac then $kb.secondary.mac | join(", ") else "" end) + "`\n\n" else "" end) +
+      (if $kb.when then "When: `" + $kb.when + "`\n\n" else "" end)
     ] | join("---\n\n"))' "$ACTIONS_FILE"
 } > "$OUTPUT_FILE"
 
