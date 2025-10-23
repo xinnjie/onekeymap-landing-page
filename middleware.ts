@@ -53,7 +53,9 @@ export function middleware(request: NextRequest) {
 
   // Redirect to locale-prefixed path
   const locale = getLocale(request);
-  request.nextUrl.pathname = `/${locale}${pathname}`;
+  const suffix =
+    pathname === "/" ? "/" : pathname.endsWith("/") ? pathname : pathname + "/";
+  request.nextUrl.pathname = `/${locale}${suffix}`;
   return NextResponse.redirect(request.nextUrl);
 }
 
