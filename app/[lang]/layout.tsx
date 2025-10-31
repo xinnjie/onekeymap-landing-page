@@ -38,9 +38,9 @@ export async function generateMetadata({
     publisher: "OneKeymap",
     metadataBase: new URL(siteUrl),
     alternates: {
-      canonical: `/${lang}/`,
+      canonical: `/${lang}`,
       languages: Object.fromEntries(
-        locales.map((locale) => [localeHreflang[locale], `/${locale}/`]),
+        locales.map((locale) => [localeHreflang[locale], `/${locale}`]),
       ),
     },
     robots: {
@@ -62,7 +62,7 @@ export async function generateMetadata({
     openGraph: {
       type: "website",
       locale: localeHreflang[lang].replace("-", "_"),
-      url: `${siteUrl}/${lang}/`,
+      url: `${siteUrl}/${lang}`,
       title: config.title,
       description: config.description,
       siteName: "OneKeymap",
